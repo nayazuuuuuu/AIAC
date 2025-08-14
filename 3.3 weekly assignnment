@@ -1,0 +1,68 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNSvBaXRdTzkDliuRsHQEaO",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/nayazuuuuuu/AIAC/blob/main/3.3%20weekly%20assignnment\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Analyzing Prompt Specificity: Improving Temperature Conversion Function with\n",
+        "Clear Instructions\n",
+        "prompt:Analyzing Prompt Specificity: Improving Temperature Conversion Function with\n",
+        "Clear Instructions"
+      ],
+      "metadata": {
+        "id": "ruNTqu3TO4vA"
+      }
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "Define the initial function: Create an initial Python function for temperature conversion (e.g., Celsius to Fahrenheit).\n",
+        "Analyze prompt specificity: Examine the prompt provided to understand the level of detail and clarity in the instructions.\n",
+        "Improve the function based on prompt: Modify the temperature conversion function based on the analysis of the prompt and any specific requirements or constraints mentioned in the prompt.\n",
+        "Test the improved function: Write code to test the improved function with various inputs and verify its correctness.\n",
+        "Document the function: Add docstrings and comments to the function to explain its purpose, parameters, and return value.\n",
+        "Summarize findings: Provide a summary of the analysis of the prompt and the improvements made to the function.\n",
+        "Finish task: Review the code and documentation to ensure everything is clear and complete.\n"
+      ],
+      "metadata": {
+        "id": "An4u6Z9zO740"
+      },
+      "execution_count": null,
+      "outputs": []
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        " It looks like a step-by-step plan or outline for analyzing prompt specificity and improving a temperature conversion function. Each line represents a distinct action or stage in the process."
+      ],
+      "metadata": {
+        "id": "PSvQrfXMPHn3"
+      }
+    }
+  ]
+}
