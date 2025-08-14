@@ -1,0 +1,89 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyPWp+EKdcA1fbKUJEhD7bOq",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/nayazuuuuuu/AIAC/blob/main/3.3%20week%20assignment\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Task 1,Provide a clear example input-output prompt to generate a sorting function.\n",
+        "Prompt:Provide a clear example input-output prompt to generate a sorting function.\n"
+      ],
+      "metadata": {
+        "id": "fMGVYPGPMktd"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "The code implements the bubble sort algorithm to sort a list of numbers in ascending order.\n",
+        "\n",
+        "The bubble_sort(arr) function takes a list arr as input.\n",
+        "It iterates through the list multiple times, comparing adjacent elements.\n",
+        "If two adjacent elements are in the wrong order, they are swapped.\n",
+        "This process is repeated until the list is sorted.\n",
+        "The example usage demonstrates how to call the function with a sample list and print the sorted result."
+      ],
+      "metadata": {
+        "id": "LV1JwBavNYuK"
+      }
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "f39d6380",
+        "outputId": "12d30740-9f9d-4822-8f77-410d948f7b28"
+      },
+      "source": [
+        "def bubble_sort(arr):\n",
+        "    n = len(arr)\n",
+        "    for i in range(n):\n",
+        "        for j in range(0, n - i - 1):\n",
+        "            if arr[j] > arr[j + 1]:\n",
+        "                arr[j], arr[j + 1] = arr[j + 1], arr[j]\n",
+        "    return arr\n",
+        "\n",
+        "# Example usage:\n",
+        "my_list = [3, 1, 4, 1, 5, 9, 2, 6]\n",
+        "sorted_list = bubble_sort(my_list)\n",
+        "print(sorted_list)"
+      ],
+      "execution_count": 2,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "[1, 1, 2, 3, 4, 5, 6, 9]\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
