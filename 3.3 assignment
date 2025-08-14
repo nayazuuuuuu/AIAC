@@ -1,0 +1,95 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyOasqita2uDKd+aCDYrbs+2",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/nayazuuuuuu/AIAC/blob/main/3.3%20assignment\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "Write structured comments to help AI generate two linked functions (e.g., login_user()\n",
+        "and register_user()).\n",
+        "Prompt:Write structured comments to help AI generate two linked functions (e.g., login_user()\n",
+        "and register_user())."
+      ],
+      "metadata": {
+        "id": "Az4x4USLN7Ih"
+      }
+    },
+    {
+      "cell_type": "markdown",
+      "source": [
+        "inked Functions Example\n",
+        "This section demonstrates how to structure comments to guide an AI in generating two linked functions.\n",
+        "\n",
+        "Function 1: register_user\n",
+        "This function should register a new user in a system.\n",
+        "\n",
+        "Gemini\n",
+        "Function 2: login_user\n",
+        "This function should log in an existing user. It should be linked to the register_user function, potentially by using the same data storage mechanism or by referencing user information created during registration."
+      ],
+      "metadata": {
+        "id": "mbNgcCEwONhy"
+      }
+    },
+    {
+      "cell_type": "code",
+      "metadata": {
+        "id": "7c976518"
+      },
+      "source": [
+        "# Function 1: register_user\n",
+        "# This function should register a new user in a system.\n",
+        "# It should take a username and password as input.\n",
+        "# It should store the username and a hashed version of the password.\n",
+        "# It should return True if registration is successful, False otherwise.\n",
+        "def register_user(username, password):\n",
+        "    # In a real application, you would use a database or other persistent storage.\n",
+        "    # For this example, we'll use a simple dictionary.\n",
+        "    if username in users:\n",
+        "        return False  # User already exists\n",
+        "    users[username] = hash(password)  # Store a hashed password (simple hash for example)\n",
+        "    return True\n",
+        "\n",
+        "# Function 2: login_user\n",
+        "# This function should log in an existing user.\n",
+        "# It should be linked to the register_user function by using the same data storage mechanism.\n",
+        "# It should take a username and password as input.\n",
+        "# It should check if the username exists and if the provided password matches the stored password.\n",
+        "# It should return True if login is successful, False otherwise.\n",
+        "def login_user(username, password):\n",
+        "    if username in users and users[username] == hash(password):\n",
+        "        return True  # Login successful\n",
+        "    return False  # Login failed\n",
+        "\n",
+        "# Simple dictionary to store users (for demonstration purposes)\n",
+        "users = {}"
+      ],
+      "execution_count": 2,
+      "outputs": []
+    }
+  ]
+}
